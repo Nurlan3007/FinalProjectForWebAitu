@@ -1,0 +1,36 @@
+.nav__about_us{
+    color:#85a280;
+    background: #f5f5f5;
+}
+
+.about-us {
+    padding: 20px;
+    min-height: 100em;
+}
+
+.our_story{
+    background: #fff;
+    padding: 40px;
+    border-radius: 40px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.our_story img{
+    width: 400px;
+    border-radius: 80px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.our_story h3{
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.our_story p{
+    color: #808080;
+    line-height: 1.8;
+}

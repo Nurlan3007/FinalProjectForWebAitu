@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-ru">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../styles/zeroing.css">
+  <link rel="stylesheet" href="../styles/home.css">
+  <link rel="shortcut icon" href="../imgs/icons8-книга-64.png" />
+  <title>Ultralight</title>
+</head>
+<body>
+  <div id="header2"></div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="../js/for_default_html_files.js"></script>
+  <div class="content">
+    <div class="container">
+      <div class="content_values">
+        <h3 class="lag-main_words">
+          Start getting better <span>with us</span>
+        </h3>
+        <p class="text lag-text">
+          We will help you gain the necessary skills for a confident start and professional growth in the world of technology.
+        </p>
+        <a href="index.html" class="programs lag-programs3">Find Programs</a>
+
+      </div>
+    </div>
+  </div>
+  <script src="../js/storage_langs.js"></script>
+  <div id="footer"></div>
+  <script>
+    let programs = document.querySelector(".programs");
+    count = 0
+    programs.style.transition = "all 2s";
+    function anim_programs(){
+      count += 1
+      if(count % 2 == 0){
+        programs.style.padding = "8px 10px";
+      }else{
+        programs.style.padding = "17px 40px";
+      }
+      setTimeout(anim_programs, 200);
+    }
+    setTimeout(anim_programs, 200);
+
+  </script>
+</body>
+</html>

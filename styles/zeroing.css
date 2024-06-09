@@ -1,0 +1,21 @@
+*:before,*:after,*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: system-ui;
+    background: #f6f1f1;
+}
+
+a{text-decoration: none;}
+ul,ol{list-style: none}
+button{background: 0;outline: 0;border: 0}
+
+.container{
+    width: 100%;
+    max-width: 1300px;
+    margin:0 auto;
+}
+

@@ -1,0 +1,162 @@
+
+header{
+    border-bottom: 2px solid #ccc;
+    background: #fff;
+}
+
+body h1 a{
+    color:#000;
+    font-size: 25px;
+}
+
+body h1 a:hover{color:#000;}
+
+
+.head__values{
+    padding: 25px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.head_left, .head_right{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.head_right{
+    margin-top: 20px;
+}
+
+header a, .login{
+    font-size: 16px;
+    padding: 10px 20px;
+    color: #191f3b;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: ease 0.5s;
+}
+
+header  a:hover,.login:hover{
+    color:#85a280;
+    background: #f5f5f5;
+}
+
+header form{
+    display: flex;
+    width: 750px;
+}
+
+header form input[type="text"]{
+    font-family: system-ui;
+    width: 90%;
+    padding: 8px 8px 8px 15px;
+    outline: none;
+    height: auto;
+    background-color: #ecebeb;
+    border:1px solid #c1c1c1;
+    border-radius: 5px 0px 0px 5px;
+    font-size: 16px;
+}
+
+header form input:focus{
+    border:1px solid #85a280;
+    background: #fff;
+}
+
+header form input[type="submit"]{
+    background: url("https://img.icons8.com/ffffff/search") center center/30% auto
+    no-repeat #85a280;
+    border:0;
+    width: 10%;
+    cursor: pointer;
+    border: 0;
+    height: auto;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+
+}
+
+header form input::placeholder{
+    font-family: system-ui;
+}
+
+header form input[type="submit"]:hover{
+    background: url("https://img.icons8.com/ffffff/search") center center/50% auto
+    no-repeat #6aa463;
+}
+
+.lang{
+    width: 300px;
+    font-family: system-ui;
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+@media (max-width: 1200px) {
+    .head__values{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .head_left {
+        width: 100%;
+    }
+    .head_right{
+        margin-top: 20px;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    header form{
+        width: 300px;
+    }
+    .lang {
+        width: 200px;
+    }
+}
+
+@media (max-width: 740px){
+    header .head_left h1{
+        font-size: 20px;
+    }
+    header .head_left a,.login{
+        padding: 5px;
+        font-size: 14px;
+    }
+
+    .head_right {
+        width: 100%;
+    }
+
+    .nav{margin-left: 10px}
+
+    .head_left, .head_right{
+        justify-content: space-between;
+    }
+    .header__search{
+        margin-right: 5px;
+    }
+
+    header form{
+        width: 100%;
+    }
+    header form input[type="text"]{
+        width: 100%;
+        padding: 4px 4px 4px 15px;
+        font-size: 14px;
+    }
+
+    body .lang{
+        margin: 0;
+        font-size: 14px;
+        padding: 2px;
+    }
+
+}
+

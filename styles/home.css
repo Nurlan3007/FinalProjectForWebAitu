@@ -1,0 +1,52 @@
+.lag-home{
+    color:#85a280;
+    background: #f5f5f5;
+    margin-left: 6px;
+}
+
+.content{
+    background: url("https://chronicle.brightspotcdn.com/dims4/default/014735c/2147483647/strip/true/crop/5194x3463+0+308/resize/840x560!/quality/90/?url=http%3A%2F%2Fchronicle-brightspot.s3.us-east-1.amazonaws.com%2Fc6%2F9d%2Fb4c22f114c41a5ef472fdbcbe695%2Fmiller-march17-gettyimages-1166469673.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content_values{
+    width: 100%;
+    max-width: 700px;
+    margin:0 auto;
+    text-align: center;
+}
+
+h3{
+    color:#191f3b;
+    font-size: 84px;
+}
+
+ span{
+    color: #6aa463;
+}
+
+.text{
+    color: #191f3b;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.programs{
+    background: #2bc1f0;
+    color:#fff;
+    font-size: 20px;
+    padding: 17px 40px;
+    font-weight: 900;
+    border-radius: 20px;
+}
+
+.programs:hover{
+    background: #12a0cc;
+}

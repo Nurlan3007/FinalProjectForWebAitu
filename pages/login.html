@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="../styles/zeroing.css">
+    <link rel="stylesheet" href="../styles/login.css">
+    <link rel="shortcut icon" href="../imgs/icons8-книга-64.png" />
+</head>
+<body>
+    <div class="auth">
+        <div class="login">
+            <h2 class="lag-h2login">Login</h2>
+            <form action="" method="get">
+                <div class="form_group">
+                    <label for="" class="lag-email1">Email</label>
+                    <input type="text" name="login">
+                    <img src="../imgs/icons8-новый-пост.gif" alt="">
+                </div>
+                <div class="form_group">
+                    <label for="" class="lag-password1">Password</label>
+                    <input type="password" name="login" class="input_pass1">
+                    <img src="../imgs/icons8-показать-24.png" alt="" class="hide_pass1">
+                </div>
+                <div class="form_group submit">
+                    <input type="submit" value="Login">
+                </div>
+            </form>
+        </div>
+        <div class="sign_up">
+            <h2 class="lag-h2sign_up">Sign Up</h2>
+            <form action="" method="get">
+                <div class="form_group">
+                    <label for="" class="lag-login2">Login</label>
+                    <input type="text" name="login">
+                    <img src="../imgs/icons8-тестовый-аккаунт-30.png" alt="">
+                </div>
+                <div class="form_group">
+                    <label for="" class="lag-email2">Email</label>
+                    <input type="text" name="login">
+                    <img src="../imgs/icons8-новый-пост.gif" alt="">
+                </div>
+                <div class="form_group">
+                    <label for="" class="lag-password2">Password</label>
+                    <input type="password" name="login" class="input_pass2">
+                    <img src="../imgs/icons8-показать-24.png" alt="" class="hide_pass2">
+                </div>
+                <div class="form_group submit">
+                    <input type="submit" value="Sign UP">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="../js/storage_langs.js"></script>
+    <script>
+        let pass1 = document.querySelector(".hide_pass1");
+        let pass2 = document.querySelector(".hide_pass2");
+
+        pass1.addEventListener("click", function(){
+            let input_pass = document.querySelector(".input_pass1");
+            let img = document.querySelector(".hide_pass1");
+            if(input_pass.type == "password"){
+                input_pass.type = "text";
+                img.src = "../imgs/icons8-показать-25.png";
+            }else{
+                input_pass.type = "password";
+                img.src = "../imgs/icons8-показать-24.png";
+            }
+        });
+
+        pass2.addEventListener("click", function(){
+            let input_pass = document.querySelector(".input_pass2");
+            let img = document.querySelector(".hide_pass2");
+            if(input_pass.type == "password"){
+                input_pass.type = "text";
+                img.src = "../imgs/icons8-показать-25.png";
+            }else{
+                input_pass.type = "password";
+                img.src = "../imgs/icons8-показать-24.png";
+            }
+        });
+
+        let lang_current = localStorage.getItem("lang");
+        for(let k in lang_auth){
+            let elem = document.querySelector(".lag-" + k);
+            elem.innerHTML = lang_auth[k][lang_current];
+        }
+
+    </script>
+
+
+</body>
+</html>
