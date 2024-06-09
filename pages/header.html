@@ -11,6 +11,7 @@
                     <a href="index.html" class="nav__programs lag-programs">Programs</a>
                     <a href="aboutus.html" class="nav__about_us lag-about_us">About Us</a>
                     <a href="messages.html" class="nav__mesg lag-nav__mesg">Messages</a>
+                    <a href="quiz.html" class="test_eng">Test Engish</a>
                 </nav>
             </div>
             <div class="head_right">
@@ -26,3 +27,8 @@
 </header>
 <script src="../js/storage_langs.js" ></script>
 <script src="../js/change_lang.js"></script>
+<script>
+    if(localStorage.getItem("resultTest") >= 10){
+        document.querySelector(".test_eng").innerHTML = "";
+    }
+</script>

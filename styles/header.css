@@ -40,6 +40,8 @@ header a, .login{
     transition: ease 0.5s;
 }
 
+header .test_eng{color:red;}
+
 header  a:hover,.login:hover{
     color:#85a280;
     background: #f5f5f5;
